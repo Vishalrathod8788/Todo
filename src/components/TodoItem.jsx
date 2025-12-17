@@ -13,7 +13,7 @@ export const TodoItem = ({ task, index }) => {
 
     return (
         <li className=" w-full border-2  border-black list-none shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex flex-col">
-            <div className="p-4 border-b-2 border-black ">
+            <div className="p-4 border-b-2 border-black break-all">
                 <h3 className={`text-lg font-bold ${task.completed ? "line-through text-gray-500" : ""}`}>{task.task}</h3>
                 {task.description && (<p className="text-sm text-gray-600 mt-1 break-after-all">
                     {task.description}
